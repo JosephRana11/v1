@@ -148,3 +148,7 @@ table {
 .title {
   text-wrap: balance;
 }
+
+/* .custom-heading {
+  @apply text-4xl font-semibold tracking-tighter;
+} */

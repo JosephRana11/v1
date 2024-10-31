@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+.link {
+  @apply text-[#FFD369]
+}
+
+.custom-heading {
+  @apply text-4xl font-semibold tracking-tighter;
+}

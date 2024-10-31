@@ -7,3 +7,7 @@
 .custom-heading {
   @apply text-4xl font-semibold tracking-tighter;
 }
+
+.custom-subheading {
+  @apply text-2xl font-semibold tracking-tighter;
+}

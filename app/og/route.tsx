@@ -1,3 +1,4 @@
+'use client'
 import { ImageResponse } from 'next/og'
 
 export function GET(request: Request) {

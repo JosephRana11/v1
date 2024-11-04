@@ -1,3 +1,5 @@
+'use client'
+
 import { baseUrl } from 'app/sitemap'
 
 export default function robots() {

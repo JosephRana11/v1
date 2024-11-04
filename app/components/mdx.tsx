@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 import Image from 'next/image'
 import { MDXRemote } from 'next-mdx-remote/rsc'
@@ -85,6 +86,7 @@ function createHeading(level) {
 
   return Heading
 }
+
 
 let components = {
   h1: createHeading(1),

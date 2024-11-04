@@ -1,3 +1,4 @@
+'use client'
 import { baseUrl } from 'app/sitemap'
 import { getBlogPosts } from 'app/blog/utils'
 

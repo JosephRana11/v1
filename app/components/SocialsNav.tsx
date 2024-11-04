@@ -1,4 +1,4 @@
-// import { SocialIcon } from 'react-social-icons/dist/component';
+'use client'
 import {SocialIcon} from 'react-social-icons'
 
 interface SocialsNavProps {

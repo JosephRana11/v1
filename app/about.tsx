@@ -1,5 +1,7 @@
 'use client'
+
 import Image from "next/image";
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 export default function About(){
     return (
@@ -40,7 +42,12 @@ const technolgies = ["Python","Javascript","Typescript","React","Nextjs","Nodejs
 const TechnologiesList = () => {
     return (
         <ul className="grid grid-cols-2 gap-2 ml-4">
-            {technolgies.map((item) => <li key={item}>{item}</li>)}
+            {technolgies.map((item , index) => 
+            <span className="flex gap-2 items-center" key={`${item}-${index}`}>
+                <ArrowRightIcon fontSize="medium"/>
+                <li key={item}>{item}</li>
+            </span>
+)}
         </ul>
     )
     

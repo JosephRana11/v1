@@ -1,7 +1,10 @@
+import HorizontalScroll from "app/components/molecules/HorizontalScroll";
+import FrameStack from "app/components/molecules/FrameStack";
+
 export default function Projects(){
     return (
         <>
-        <h1 className="custom-subheading mb-6">Projects</h1>
+        <FrameStack/>
         </>
     )
 }

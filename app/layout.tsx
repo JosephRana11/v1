@@ -9,6 +9,7 @@ import Footer from './components/oraganisms/footer'
 // import { baseUrl } from './sitemap'
 import 'app/styles/tailwind.css'
 import SocialsNav from './components/oraganisms/SocialsNav'
+import { ReactLenis } from 'lenis/dist/lenis-react';
 
 //todo configure sitemap
 export const metadata: Metadata = {
@@ -55,8 +56,9 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+      <body className="antialiased max-w-4xl mx-4 mt-8 lg:mx-auto">
+        <ReactLenis root>
+         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
           <SocialsNav/>
           {children}
@@ -64,6 +66,7 @@ export default function RootLayout({
           <Analytics />
           <SpeedInsights />
         </main>
+       </ReactLenis>
       </body>
     </html>
   )

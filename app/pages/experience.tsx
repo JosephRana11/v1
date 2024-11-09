@@ -1,5 +1,5 @@
 import { TabsList, TabsTrigger, Tabs , TabsContent } from "app/components/atoms/Tabs"
-import Link from "next/link"
+import { ExperienceCard } from "app/components/oraganisms/cards/ExperienceCard"
 
 export interface IExperience{
     company : string
@@ -30,14 +30,14 @@ const experiences: IExperience[] = [
                 description: [
                     "Worked with Next.js, FastAPI, Django, TypeScript, Node.js, React, and WebSockets",
                     "Built responsive, user-friendly interfaces in collaboration with UI/UX designers",
-                    "Fixed issues in the legacy codebase"
+                    "Fixed issues in the legacy codebase relating to user Authentication and signup"
                 ]
             }
         ]
     },
     {
         company: "Freelance",
-        position: "Web Developer",
+        position: "Developer",
         companyUrl: "/",
         period: "2022 - Present",
         description: [
@@ -69,49 +69,4 @@ export default function Experience() {
     )
 }
 
-interface ExperienceCardProps extends IExperience{}
 
-export function ExperienceCard({company , position , period , description , childExperiences , companyUrl}: ExperienceCardProps) {
-    return (
-        <div className="flex flex-col space-y-8">
-            <div className="flex flex-col items-start justify-center">
-                <h2 className="text-lg font-medium">
-                    {position}
-                    {
-                        company &&
-                        <Link href={companyUrl || "/"} target="_blank">
-                            <span className="text-brand-yellow-primary"> @ {company}</span>
-                        </Link>
-                    }
-                </h2>
-                <span className="text-sm tracking-wider text-neutral-400">{period}</span>
-                <div className="mt-4">      
-                 {
-                    description?.map((item , index) => 
-                        <BulletPoint key={`${item}-${index}`} className="mb-2">
-                            <span className="text-gray-200">{item}</span>
-                        </BulletPoint>
-                    )
-                }
-                </div>
-            </div>
-            {
-                childExperiences?.map((item , index) => 
-                <ExperienceCard key={`${item.company}`} company="" position={item.position} period={item.period} description={item.description} childExperiences={item.childExperiences}/>
-                )
-            }
-        </div>
-    )
-}
-
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
-import cn from "app/lib/utils"
-
-export const BulletPoint = ({children , className} : {children : React.ReactNode , className? : string}) => {
-    return (
-        <li className={cn("flex gap-2" , className)}>
-            <ArrowRightIcon fontSize="small"/>
-            {children}
-        </li>
-    )
-}

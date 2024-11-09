@@ -2,8 +2,8 @@
 
 import { BlogPosts } from "app/components/oraganisms/posts";
 import Link from "next/link";
-import Home from "./rss/pages/home";
-import About from "./rss/pages/about";
+import Home from "./pages/home";
+import About from "./pages/about";
 
 export default function Page() {
   return (

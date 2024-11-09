@@ -1,6 +1,6 @@
 "use client";
 
-import { baseUrl } from "app/utils/sitemap";
+import { baseUrl } from "app/lib/sitemap";
 
 export default function robots() {
   return {

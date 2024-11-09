@@ -3,7 +3,7 @@
 import { notFound } from "next/navigation";
 import { CustomMDX } from "app/components/oraganisms/mdx";
 import { formatDate, getBlogPosts } from "app/blog/utils";
-import { baseUrl } from "app/utils/sitemap";
+import { baseUrl } from "app/lib/sitemap";
 
 export async function generateStaticParams() {
   let posts = getBlogPosts();

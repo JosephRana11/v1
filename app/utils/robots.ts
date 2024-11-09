@@ -1,14 +1,14 @@
-'use client'
+"use client";
 
-import { baseUrl } from 'app/sitemap'
+import { baseUrl } from "app/utils/sitemap";
 
 export default function robots() {
   return {
     rules: [
       {
-        userAgent: '*',
+        userAgent: "*",
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
-  }
+  };
 }

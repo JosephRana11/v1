@@ -6,6 +6,7 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Experience from "./pages/experience";
 import Projects from "./pages/projects";
+import Contact from "./pages/contact";
 
 export default function Page() {
   return (
@@ -22,6 +23,12 @@ export default function Page() {
       </section>
       <section>
         <Projects/>
+      </section>
+      <section>
+        {/* <BlogPosts /> */}
+      </section>
+      <section>
+        <Contact/>
       </section>
     </>
   );

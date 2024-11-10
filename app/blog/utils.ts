@@ -1,5 +1,7 @@
-import fs from 'fs'
+"use server"
+
 import path from 'path'
+import fs from 'fs'
 
 type Metadata = {
   title: string

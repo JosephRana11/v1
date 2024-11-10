@@ -12,12 +12,12 @@ const navItems = {
   'experience': {
     name: 'experience',
   },
-  // 'projects': {
-  //   name: 'projects',
-  // },
-  'blog': {
-    name: 'blog',
+  'projects': {
+    name: 'projects',
   },
+  // 'blog': {
+  //   name: 'blog',
+  // },
   'contact': {
     name: 'contact',
   },

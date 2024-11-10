@@ -1,6 +1,6 @@
 "use client";
 
-import { BlogPosts } from "app/components/oraganisms/posts";
+// import { BlogPosts } from "app/components/oraganisms/posts";
 import Link from "next/link";
 import Home from "./pages/home";
 import About from "./pages/about";
@@ -23,9 +23,6 @@ export default function Page() {
       </section>
       <section id="projects">
         <Projects/>
-      </section>
-      <section id="blog">
-        {/* <BlogPosts /> */}
       </section>
       <section id="contact">
         <Contact/>

@@ -1,5 +1,3 @@
-"use client";
-
 import { notFound } from "next/navigation";
 import { CustomMDX } from "app/components/oraganisms/mdx";
 import { formatDate, getBlogPosts } from "app/blog/utils";

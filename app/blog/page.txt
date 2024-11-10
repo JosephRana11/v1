@@ -1,4 +1,3 @@
-"use client";
 import { BlogPosts } from "app/components/oraganisms/posts";
 
 export const metadata = {

@@ -31,7 +31,7 @@ export default function SocialsNav() {
         <div className="flex flex-col space-y-6 fixed left-4 bottom-4">
             {
                 socials.map((item , index) => 
-                    <SocialIcon key={index} url={item.iconSrc} bgColor='none' style={{height: 38 , width: 38}}/>
+                    <SocialIcon key={index} url={item.iconSrc} bgColor='none' style={{height: 38 , width: 38}} href={item.href} target='_blank'/>
                 )
             }
         </div>

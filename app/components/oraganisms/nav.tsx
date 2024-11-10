@@ -1,20 +1,24 @@
 'use client'
+
 import Link from 'next/link'
 
 const navItems = {
-  '/': {
+  'home': {
     name: 'home',
   },
-  '/about': {
+  'about': {
     name: 'about',
   },
-  '/projects': {
-    name: 'projects',
+  'experience': {
+    name: 'experience',
   },
-  '/blog': {
+  // 'projects': {
+  //   name: 'projects',
+  // },
+  'blog': {
     name: 'blog',
   },
-  '/contact': {
+  'contact': {
     name: 'contact',
   },
 }
@@ -32,7 +36,7 @@ export function Navbar() {
               return (
                 <Link
                   key={path}
-                  href={path}
+                  href={`#${path}`}
                   className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
                 >
                   {name}

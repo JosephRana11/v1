@@ -28,7 +28,7 @@ const experiences: IExperience[] = [
                 position: "Full Stack Intern",
                 period: "March - May 2024",
                 description: [
-                    "Worked with Next.js, FastAPI, Django, TypeScript, Node.js, React, and WebSockets",
+                    "Worked with Next.js, FastAPI, TypeScript, Node.js, React, WebSockets and OAuth",
                     "Built responsive, user-friendly interfaces in collaboration with UI/UX designers",
                     "Fixed issues in the legacy codebase relating to user Authentication and signup"
                 ]

@@ -15,10 +15,10 @@ const socials : SocialsNavProps[] = [
         iconSrc : "https://github.com",
         href : "https://github.com/JosephRana11"
     },
-    {
-        iconSrc : "https://discord.com",
-        href : ""
-    },
+    // {
+    //     iconSrc : "https://discord.com",
+    //     href : ""
+    // },
     {
         iconSrc: "https://email.com",
         href : "https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsLMnVzmXZpbGXZHwGcRlsdvqkMkQfDLHVTrCfLrXBtvvcctldxJpcTXNXWXTSXxHcTCBQPV"

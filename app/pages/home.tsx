@@ -8,7 +8,7 @@ export default function Home() {
         <h1 className="mb-8 custom-heading">Joseph Rana</h1>
             <p className="mb-4">
             {`I am a software developer specializing in building full stack web applications.
-            Currently I am a part-time developer at `}
+            Currently I am a developer at `}
             <Link href={"https://sireto.io"} target='_blank'>
             <span className='link'>Sireto Technology</span>
             </Link>

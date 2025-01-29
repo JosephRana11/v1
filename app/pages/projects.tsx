@@ -32,7 +32,7 @@ const projects : IProject[] = [
       title: 'DrepID',
       description:
         'A webapp for easy minting , sharing and delegation of DrepID. ',
-      src: 'https://sanchonet.drep.id/',
+      src: 'https://preview.drep.id/',
       link: '/assets/images/projects/DrepId.png',
       color: '#13006c',
       stack : ["NextJS","FastAPI","KuberClient","TailwindCSS","Github Actions"]

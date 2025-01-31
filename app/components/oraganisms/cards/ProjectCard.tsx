@@ -56,7 +56,7 @@ interface ProjectCardProps {
           className={`flex flex-col relative -top-[25%] h-[450px] w-[80%] rounded-md p-10 origin-top`}
         >
           <h2 className='text-2xl text-center font-semibold'>{title}</h2>
-          <div className={`flex h-full mt-5 gap-10`}>
+          <div className={`flex h-full mt-5 gap-10 overflow-clip`}>
             <div className={`w-[40%] relative top-[10%]`}>
               <p className='text-sm'>{description}</p>
               <p className='flex flex-wrap gap-2 mt-2 w-full overflow-auto'>

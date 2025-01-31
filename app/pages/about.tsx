@@ -2,18 +2,17 @@
 
 import Image from "next/image";
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import { about } from "app/constants";
 
 export default function About(){
     return (
         <article className="flex flex-col gap-4">
   <h1 className="custom-subheading">About Me</h1>
   <p className="mb-4">
-    I began coding in high school, creating small apps in my spare time. I did not think of it anything much back then and took it as a hobby.
-     After highschool, I got into web development and have been building web apps ever since.
+    {about.description1}
   </p>
   <p className="mb-4">
-    Outside of work, I’m focused on personal projects and exploring my interests in blockchain and microservices. 
-    When I'm not in front of a screen, you can usually find me on the basketball court or hiking in the nearby mountains.
+    {about.description2}
   </p>
   <p className="mb-4 font-semibold">
     Some of the Technologies that I work with.
@@ -37,12 +36,11 @@ const ProfileImage = () => {
     )
 }
 
-const technolgies = ["Python","Javascript","Typescript","React","Nextjs","Nodejs","Docker","Fastapi","Django" , "Github Actions"]
 
 const TechnologiesList = () => {
     return (
         <ul className="grid grid-cols-2 gap-2 ml-4">
-            {technolgies.map((item , index) => 
+            {about.technologyStack.map((item , index) => 
             <span className="flex gap-2 items-center" key={`${item}-${index}`}>
                 <ArrowRightIcon fontSize="medium"/>
                 <li key={item}>{item}</li>

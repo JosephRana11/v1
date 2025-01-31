@@ -3,8 +3,7 @@ import { ReactLenis } from 'lenis/dist/lenis-react';
 import { useScroll } from 'framer-motion';
 import { useRef } from 'react';
 import { ProjectCard } from '../oraganisms/cards/ProjectCard';
-import { IProject } from 'app/pages/projects';
-
+import { IProject } from 'app/constants';
 export default function index({ projects }: { projects: IProject[] }): JSX.Element {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({

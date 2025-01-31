@@ -1,6 +1,6 @@
-import { IExperience } from "app/pages/experience"
 import Link from "next/link"
 import { BulletPoint } from "app/components/atoms/BulletPoint"
+import { IExperience } from "app/constants"
 
 interface ExperienceCardProps extends IExperience{}
 
